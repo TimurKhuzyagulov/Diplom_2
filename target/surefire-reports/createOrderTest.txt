@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: createOrderTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.606 s - in createOrderTest
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 28.937 s <<< FAILURE! - in createOrderTest
+createOrderWithoutAuthTest(createOrderTest)  Time elapsed: 0.67 s  <<< ERROR!
+java.lang.ClassCastException: class io.restassured.path.xml.XmlPath cannot be cast to class java.lang.Boolean (io.restassured.path.xml.XmlPath is in unnamed module of loader 'app'; java.lang.Boolean is in module java.base of loader 'bootstrap')
+	at createOrderTest.createOrderWithoutAuthTest(createOrderTest.java:29)
+
